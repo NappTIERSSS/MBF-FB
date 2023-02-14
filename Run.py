@@ -381,8 +381,8 @@ class crack:
         for _ in range(total):
             self.browser_version = (f'{random.randrange(85, 105)}.0.{random.randrange(4200, 4900)}.{random.randrange(40, 150)}')
             self.build = (''.join(random.choice('1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890') for y in range(6)))
-            self.android_version = random.choice(['11', '90', '8.1.0'])
-            self.android_model = random.choice(['1820', 'RMX2072'])
+            self.android_version = random.choice(['8.0', '9.0', '8.1.0'])
+            self.android_model = random.choice(['1820'])
             self.useragent = ('Mozilla/5.0 (Linux;Vivo Android {}; {} Build/{}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{} Mobile Safari/537.36'.format(self.android_version, self.android_model, self.build, self.browser_version))
         return self.useragent
 
